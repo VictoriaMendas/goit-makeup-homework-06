@@ -703,16 +703,47 @@ padding-top: 72px;
     border-radius: 4px;
     padding: 5px 10px;
     margin-bottom: 8px;
-   
+   outline: transparent;
+  }
+  .contact-form:focus{
+    border-color: var(--back-color-title);
+  }
+  .contact-form:focus + .form-icon {
+fill: var(--back-color-title);
   }
   .form-button {
-    background-color: var(--back-color-title);
+    background-color: var(--background-color);
     color:var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border:transparent;
+  cursor: pointer;
+padding: 16px 32px;
+line-height: 24px;
+align-items: center;
+display: flex;
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
   }
+  .form-button:is(:hover, :focus) {
+    background: var(--back-color-title);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transform: var(--transition-duraction-and-func);
+  }
+  
+  
+  border-radius: 4px;
   .form-textarea {
-
+    width: 100%;
+    min-height: 120px;
+    display: block;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 5px 10px;
+    
+  
   }
   .form-icon {
     position: absolute;
