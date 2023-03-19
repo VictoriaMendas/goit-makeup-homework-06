@@ -513,21 +513,19 @@ margin-bottom: 16px;
   letter-spacing: 0.02em;
   color: var(--thirdary-title-color);
   margin-bottom: 16px;
-  margin-left: 80px;
 }
-.footer-iput-subscribe {
-  width: 453px;
+.footer-input-subscribe {
+width: 453px;
   height: 80px;
-  position: relative;
+  margin-left: auto;
   transition: box-shadow var(--transition-duraction-and-func);
 }
-.footer-input-subscribe:is (:hover, :focus) {
+.footer-input-subscribe:is(:hover, :focus) {
 box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .input-email {
   width: 264px;
   height: 40px;
-  margin-left: 80px;
   border: 1px solid var(--thirdary-title-color);
 background-color: var(--main-title-color);
     border-radius: 4px;
@@ -535,26 +533,25 @@ background-color: var(--main-title-color);
    outline: transparent;
    margin-bottom: 4px;
    font-size: 12px;
-line-height: 24px;
+line-height: 2;
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
+color: var(--thirdary-title-color);
 
 }
 
 .btn-input-footer {
   color: var(--thirdary-title-color);
   background-color: var(--back-color-title);
-  padding: 8px 24px;
+  padding: 8px 16px 8px 24px;
   margin-left: 24px;
 flex-direction: row;
-border-radius: 4px;
-width: 165px;
-height: 40px;
+border-radius: none;
 font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
 display: flex;
-align-items: stretch;
+align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 
@@ -562,8 +559,7 @@ letter-spacing: 0.04em;
 .social-input-link {
 }
 .input-icon-footer {
-  position: absolute;
-transform: translate(31%);
+margin-left: 24px;
 
 }
 /*----Button-Portfolio----*/
@@ -695,10 +691,8 @@ transition: opacity var(--transition-duraction-and-func), visibility var(--trans
   left: 50%;
  transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 576px;
   background-color: #fcfcfc;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 72px 24px 24px;
   margin: 0 auto;
 }
   .modal-close-button {
@@ -744,7 +738,6 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
-padding-top: 72px;
 
   }
   .form-label span {
@@ -759,7 +752,7 @@ line-height: 14px;
 letter-spacing: 0.04em;
 color: var(--input-color);
 margin-bottom: 4px;
-margin-top: 8px;
+
   }
   .form-name-message {
     font-weight: 400;
